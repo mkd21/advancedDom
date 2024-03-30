@@ -1,0 +1,19 @@
+#parent 
+{
+    width:600px;
+    height: 600px;
+    background-color: brown;
+}
+
+.child
+{
+    width: 400px;
+    height: 400px;
+    padding: 69px 0px 0px 94px;
+}
+
+#image
+{
+    width: 100%;
+    height: 100%;
+}
