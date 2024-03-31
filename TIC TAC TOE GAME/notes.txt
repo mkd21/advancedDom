@@ -1,0 +1,5 @@
+writing anything with textContent or anything is a runtime activity and js will not wait for that and will execute the further line of code 
+
+that's what when we were using alert in a normal way then the alert was happing first at winner level but the writing of content used to happen afterwards
+
+we can use a async piece of code to execute it 

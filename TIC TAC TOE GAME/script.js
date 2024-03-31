@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded" , ()=>{
 
     let parent = document.getElementById("parent");
+    let tiles = document.querySelectorAll(".tiles");
+    console.log(tiles);
     let gameStatus = false;
     let arr = new Array(9).fill();
     console.log(arr);
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
             if(targetTile.getAttribute("data-visited"))
             {
-                return;
+                return;         
             }
 
             if(!gameStatus)
@@ -43,7 +45,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
             // for rows 
             if(arr[0] == character && arr[1] == character && arr[2] == character)    // 1st row
             {
-                console.log(`${character} is winner`);
+                // alert(`winner is ${character}`);
+                winnerPopup(character);
             }
             else if(arr[3] == character && arr[4] == character && arr[5] == character)   // 2nd row
             {
@@ -57,7 +60,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
             // for columns 
             else if(arr[0] == character && arr[3] == character && arr[6] == character)  // 1st column
             {
-                console.log(`${character} is winner`);
+                // console.log(`${character} is winner`);
             }
             else if(arr[1] == character && arr[4] == character && arr[7] == character)  // 2nd column
             {
@@ -78,6 +81,19 @@ document.addEventListener("DOMContentLoaded" , ()=>{
             {
                 console.log(`${character} is winner`);
             }
+        }
+
+
+        function winnerPopup(char)
+        {
+            setTimeout( ()=> {
+                alert(`winner is ${char}`);
+                tiles.forEach( (index)=>{              // quertselectorAll will return a node list so to iterate we use forEach loop
+                    index.textContent = "";
+                });
+                window.location.reload();
+            } , 0)
+
         }
 
     });
