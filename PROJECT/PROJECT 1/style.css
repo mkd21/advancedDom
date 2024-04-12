@@ -1,0 +1,84 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: #a79393;
+    color: wheat;
+}
+.container 
+{
+    /* background-color: aquamarine; */
+    height: 600px;
+    position: relative;
+}
+
+h3 
+{
+    position: absolute;
+    text-align: center;
+    margin: 41px 0px 0px 373px;
+    text-shadow: 3px 2px 4px rgba(4, 95, 98, 0.541);
+}
+
+h3::after
+{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #5cc404;
+    border: 1px solid red;
+    top: 35px;
+    left: 0px;
+    border-radius: 24px;
+    box-shadow: 3px 6px 11px orange;
+}
+
+.cards_parent
+{
+    position: absolute;
+    /* background-color: rgb(32, 199, 221); */
+    top: 173px;
+    left: 32%;
+    width: 507px;
+}
+.cards_parent ul li 
+{
+    /* list-style-type: none; */
+    text-decoration: none;
+    border: 1px solid black;
+    margin:3px 0px 30px 0px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    border-radius: 34px;
+    padding: 12px 0px 12px 0px;
+    box-shadow: 4px 5px 3px cornflowerblue;
+}
+
+.cards_parent ul li:hover
+{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.messageSection
+{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 547px;
+    left: 525px;
+    width: 550px;
+}
+
+.selectedLanguage{
+    margin: 12px 0px 0px 0px;
+    text-transform: capitalize;
+}
+
+.selectedLanguage p{
+   font-weight: bolder;
+   margin: 0px 0px 0px 12px;
+   font-size: 20px;
+   text-shadow: 4px 6px 12px black;
+}

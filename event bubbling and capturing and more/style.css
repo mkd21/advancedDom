@@ -1,0 +1,36 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer 
+{
+    height: 500px;
+    width: 500px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    background-color: rgb(17, 111, 179);
+}
+
+.inner 
+{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(234, 0, 255);
+}
